@@ -1,0 +1,70 @@
+.about_us {
+    width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+}
+.about_us__main-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.separator {
+    border-bottom: 2px solid #EC7979;
+    width: 170px;
+    margin: auto;
+}
+.about_us__secondary_title {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.about_us__skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list__skill-item {
+    display: inline-block;
+    width: 33%;
+}
+
+.skill-item__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+.skill-item__text {
+    font-family: "Railway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.skill-item__image-wrapper {
+    width: 92px;
+    height: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 92px;
+    font-size: 0;
+
+}
+.skill-item__image-1 {
+    width: 65px;
+    height: 65px;
+    vertical-align: middle;
+}
+.skill-item__image-2 {
+    width: 66px;
+    height: 45px;
+    vertical-align: middle;
+}
+.skill-item__image-3 {
+    width: 44px;
+    height: 66px;
+    vertical-align: middle;
+}
