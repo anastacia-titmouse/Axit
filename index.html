@@ -6,43 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/tabs.css">
-    <link rel="stylesheet" href="./styles/awesome.css">
-    <link rel="stylesheet" href="./styles/common.css">
 </head>
 <body>
     <!-- TABS -->
-    <section class="banner">
-        <div class="banner_tabs">
+    <section class="tabs">
+        <div class="tabs__container">
             <input type="radio" id="tabChoice1" name="tab" value="tab1" checked>
             <label for="tabChoice1">Tab1</label>
             <input type="radio" id="tabChoice2" name="tab" value="tab2">
             <label for="tabChoice2">Tab2</label>
             <input type="radio" id="tabChoice3" name="tab" value="tab3">
             <label for="tabChoice3">Tab3</label>
-        <div id="tab1_content">
-                <div class="tab1_banner">
-                    <div class="tab1_banner__content-wrapper">
-                        <h3 class="tab1_banner__main_title">
+        <div id="tabs__tab1-content">
+                    <div class="tab1-content__content-wrapper">
+                        <h3 class="tab1-content__main-title">
                             Tabs with soft transitioning effect.
                         </h3>
-                        <h5 class="tab1_banner__secondary_title">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> 
-                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra<br> 
+                        <h5 class="tab1-content__secondary-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
                                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                                penatibus et magnis dis parturient montes.<br><br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br>bibendum laoreet. 
+                                penatibus et magnis dis parturient montes.</h5> 
+                        <h5 class="tab1-content__secondary-title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
                         </h5>
-                        <button class="button tab1_banner__button">Download</button>
+                        <button class="button tab1-content__button">Download</button>
                     </div>
-                    <div class="tab1_banner__image-wrapper">
-                        <img class="tab1_banner__image" src="./images/liberty_statue.jpg">
+                    <div class="tab1-content__image-wrapper">
+                        <img class="tab1-content__image" src="./images/liberty_statue.jpg">
                     </div>
-                </div>
-            </div>
-            <div id="tab2_content">
+        </div>
+            <div id="tabs__tab2-content">
                 Содержимое 2...
             </div>
-            <div id="tab3_conten">
+            <div id="tabs__tab3-content">
                 Содержимое 3...
             </div>
         </div>
@@ -78,5 +74,55 @@
         </ul>
     </section>
     <!-- ABOUT US END -->
+    <!-- PRICING OPTIONS -->
+    <section class="options">
+        <div class="options__content">
+            <h2 class="options__main-title">pricing options</h2>
+            <div class="separator"></div>
+            <h5 class="options__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+            <div class="options__price-content">
+                <div class="price-content__price-list--wrapper">
+                    <ul class="price-content__price-list price-content__price-list--basic">
+                        <li class="price-list__price-item">Basic</li>
+                        <li class="price-list__price-item">10$</li>
+                        <li class="price-list__price-item">Free for life</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                    </ul>
+                </div>
+                <div class="price-content__price-list--wrapper">
+                    <ul class="price-content__price-list price-content__price-list--optima">
+                        <li class="price-list__price-item">Optima</li>
+                        <li class="price-list__price-item">20$</li>
+                        <li class="price-list__price-item">Free for life</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                    </ul>
+                </div>
+                <div class="price-content__price-list--wrapper">
+                    <ul class="price-content__price-list price-content__price-list--pro">
+                        <li class="price-list__price-item">Pro</li>
+                        <li class="price-list__price-item">30$</li>
+                        <li class="price-list__price-item">Free for life</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                        <li class="price-list__price-item">1 gb of space</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRICING OPTIONS END-->
 </body>
 </html>
