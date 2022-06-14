@@ -9,12 +9,13 @@
 
 html, body {
     margin: 0 auto;
-    width: 1510px;
+    background-color: #E5E5E5;
 }
 /*TABS SECTION*/
 .tabs  {
     width: 1170px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto;
+    background-color:#FFFFFF;
 }
 
 .tabs__container>input[type="radio"] {
@@ -23,7 +24,7 @@ html, body {
 .tabs__container>div {
     /* скрыть контент по умолчанию */
     display: none;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #E5E5E5;
     padding: 0 0 0 100px;
     font-size: 16px;
     width: 100%;  
@@ -109,7 +110,7 @@ html, body {
     height: 500px;
 }
 .tab1-content__content-wrapper {
-    display:inline-block;
+    display:block;
     width: 570px;
     height: 500px;
     float: left;
@@ -121,7 +122,8 @@ html, body {
 .about_us {
     width: 1170px;
     padding: 0 15px;
-    margin: auto;
+    margin: 0 auto;
+    background-color: #FFFFFF;
 }
 .about_us__main-title {
     font-family: 'Raleway', sans-serif;
@@ -129,11 +131,13 @@ html, body {
     font-weight: 400;
     font-size: 36px;
     text-align: center;
+    margin: 0;
+    padding: 60px 0;
 }
 .separator {
     border-bottom: 2px solid #EC7979;
     width: 170px;
-    margin: auto;
+    margin: 0 auto;
 }
 .about_us__secondary_title {
     font-family: 'Raleway';
@@ -195,13 +199,12 @@ html, body {
 /*AWESOME SECTION END*/
 
 /*PRICE OPTIONS SECTION*/
-.options {
-    background-color: #F5F5F5;
-}
+
 .options__content {
     width: 1170px;
     padding: 15px;
-    margin: 100px 160px;
+    margin: 0 auto;
+    background-color: #F5F5F5;
 }
 .options__main-title {
     font-family: 'Raleway', sans-serif;
@@ -290,3 +293,8 @@ html, body {
 }
 
 /*PRICE OPTIONS SECTION END*/
+
+/*CUSTOMERS SECTION*/
+@import "./customers";
+
+/*CUSTOMERS SECTION END*/

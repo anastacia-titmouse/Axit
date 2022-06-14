@@ -1,0 +1,98 @@
+body {
+    counter-reset: section;
+}
+.customers__container {
+    width: 1170px;
+    padding: 50px 15px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+.customers {
+    &__container {
+        width: 1170px;
+        padding: 50px 15px;
+        margin: 0 auto;
+    }
+    &__main-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 20px;
+    }
+    &__secondary-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        color: #86878B;
+        padding: 5px 0;
+    }
+    &__feedback-cont {
+        display:flex;
+        gap: 20px;
+    }
+    &__image-content {
+    display: flex;
+    }
+
+    &__image-info {
+        flex-direction: column;
+    }
+    &__feedback {
+        background-color:#E2E2E2;
+        border-radius: 10px;
+        padding: 50px;
+    }
+    &__feedback-text {
+        margin: 0;
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #86878B;
+    }
+    &__feedback-image--wrapper {
+        margin-left: 80px;
+    }
+    &__image-content {
+        padding-top: 40px;
+    }
+    &__customer-name {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: capitalize;
+        color: #000000;
+        margin: 10px 20px;
+    }
+    &__customer-occupation {
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000000;
+        margin: 0 20px 20px 20px;
+    }
+    &__image-info::after{
+        counter-increment: section;
+        content: counter(section);
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: #eeeeee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        
+    }
+}
