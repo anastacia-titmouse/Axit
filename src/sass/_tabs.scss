@@ -1,0 +1,99 @@
+.tabs {
+    &__tabs-container {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    &__tabs-content {
+        width: 60%;
+    }
+    &__content-wrapper {
+        border: 1px solid #E5E5E5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    &__tabs-item {
+        min-width: 150px;
+        text-align: center;
+        position: relative;
+
+        &--active {
+            border: 1px solid #E5E5E5;
+            border-bottom: none;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                background-color: #ffffff;
+                bottom: -1px;
+            }
+        }
+    }
+    &__image-wrapper{
+        width: 40%;
+        height: 100%;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+.tabs-item {
+    &__item {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+.tabs-content {
+    &__main-title {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        color: #000000;
+        padding: 0 0 45px 100px;
+        margin-top: 0;
+    }
+    &__tabs-text {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        padding: 0 30px 0 100px;
+        margin: 0;
+    }
+    &__button {
+        margin: 50px 0 55px 100px;
+    }
+}
+.button {
+    display: block;
+    width: 270px;
+    height: 60px;
+    margin-bottom: 30px;
+    border: none;
+    border-color: transparent;
+
+    &--red {
+        background-color: #EC7979;
+        color:#fff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        transition: background-color .3s ease-in-out;
+
+        &:hover, &:focus{
+            cursor: pointer;
+            background-color: #e75454;
+        }
+    }
+}

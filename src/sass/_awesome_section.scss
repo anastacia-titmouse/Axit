@@ -1,0 +1,48 @@
+.about_us {
+    &__main-title {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        margin: 0;
+    }
+    &__secondary_title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: #86878B;
+    }
+    &__skills-list--wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+.skills-list {
+    &__skill-item {
+        justify-items: center;
+    }
+    
+}
+.skill-item {
+    &__title{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+    }
+    &__text {
+        font-family: "Railway", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    }
+    &__image-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,12 +1,6 @@
 body {
     counter-reset: section;
 }
-.container {
-    width: 1170px;
-    padding: 50px 15px;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-}
 .customers {
     &__container {
         width: 1170px;
@@ -21,7 +15,6 @@ body {
         text-align: center;
         text-transform: uppercase;
         color: #000000;
-        padding-bottom: 20px;
     }
     &__secondary-title {
         font-family: 'Raleway';
