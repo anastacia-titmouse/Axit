@@ -47,6 +47,19 @@ body {
         background-color:#E2E2E2;
         border-radius: 10px;
         padding: 50px;
+        position: relative;
+        &::after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 20%;
+            bottom: -25px;
+            border-top: 25px solid #E2E2E2;
+            border-right: 12px solid transparent;
+            border-left: 12px solid transparent;
+        }
     }
     &__feedback-text {
         margin: 0;
@@ -57,9 +70,6 @@ body {
         line-height: 16px;
         text-align: center;
         color: #86878B;
-    }
-    &__feedback-image--wrapper {
-        margin-left: 80px;
     }
     &__image-content {
         padding-top: 40px;
