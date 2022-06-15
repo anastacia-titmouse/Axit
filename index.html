@@ -5,81 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./src/sass/tabs.css">
+    <link rel="stylesheet" href="./src/sass/main.css">
     <script src="./scripts/index.ts"></script>
 </head>
 <body>
     <!-- TABS -->
     <section class="tabs">
-        <div class="tabs__container">
-            <input type="radio" id="tabChoice1" name="tab" value="tab1" checked>
-            <label for="tabChoice1">Tab1</label>
-            <input type="radio" id="tabChoice2" name="tab" value="tab2">
-            <label for="tabChoice2">Tab2</label>
-            <input type="radio" id="tabChoice3" name="tab" value="tab3">
-            <label for="tabChoice3">Tab3</label>
-        <div id="tabs__tab1-content">
-                    <div class="tab1-content__content-wrapper">
-                        <h3 class="tab1-content__main-title">
-                            Tabs with soft transitioning effect.
-                        </h3>
-                        <h5 class="tab1-content__secondary-title">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                                penatibus et magnis dis parturient montes.</h5> 
-                        <h5 class="tab1-content__secondary-title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
-                        </h5>
-                        <button class="button tab1-content__button">Download</button>
-                    </div>
-                    <div class="tab1-content__image-wrapper">
-                        <img class="tab1-content__image" src="./images/liberty_statue.jpg">
-                    </div>
-        </div>
-            <div id="tabs__tab2-content">
-                Содержимое 2...
+        <div class="container">
+            <div class="tabs__tabs-container">
+                <div class="tabs__tabs-item tabs__tabs-item--active">
+                    <p class="tabs-item__item">tab 1</p>
+                </div>
+                <div class="tabs__tabs-item">
+                    <p class="tabs-item__item">tab 2</p>
+                </div>
+                <div class="tabs__tabs-item">
+                    <p class="tabs-item__item">tab 3</p>
+                </div>
             </div>
-            <div id="tabs__tab3-content">
-                Содержимое 3...
+            <div class="tabs__content-wrapper">
+                <div class="tabs__tabs-content">
+                    <h3 class="tabs-content__main-title">Tabs with soft transitioning effect.</h3>
+                    <p class="tabs-content__tabs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod </p>
+                    <p class="tabs-content__tabs-text">bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra</p>
+                    <p class="tabs-content__tabs-text">justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                        penatibus et magnis dis parturient montes.</p>
+                    <p class="tabs-content__tabs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                        bibendum laoreet.</p>
+                    <button class="button button--red tabs-content__button">Download</button>
+                </div>
+                <div class="tabs__image-wrapper">
+                    <img class="tabs__image" src="./images/liberty_statue.jpg">
+                </div>
             </div>
         </div>
     </section>
     <!-- TABS END -->
     <!-- ABOUT US -->
     <section class="about_us">
+        <div class="container">
         <h2 class="about_us__main-title">WHY THIS IS AWESOME</h2>
-        <div class="separator"></div>
+        <div class="separator separator--orange"></div>
         <h5 class="about_us__secondary_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-        <ul class="about_us__skills-list">
-            <li class="skills-list__skill-item">
+        <div class="about_us__skills-list--wrapper">
+            <div class="skills-list__skill-item">
                 <div class="skill-item__image-wrapper">
-                    <img class="skill-item__image-1" src="./images/Vector.png"  alt="">
+                    <img class="skill-item__image-1" src="./images/about_icon_1.png"  alt="icon_1">
                 </div>
                 <h4 class="skill-item__title">Thoughtful Design</h4>
                 <p class="skill-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-            </li>
-            <li class="skills-list__skill-item">
+            </div>
+            <div class="skills-list__skill-item">
                 <div class="skill-item__image-wrapper">
-                    <img class="skill-item__image-2" src="./images/Vector2.png" alt="">
+                    <img class="skill-item__image-2" src="./images/about_icon_2.png" alt="icon_2">
                 </div>
                 <h4 class="skill-item__title">Thoughtful Design</h4>
                 <p class="skill-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-            </li>
-            <li class="skills-list__skill-item">
+            </div>
+            <div class="skills-list__skill-item">
                 <div class="skill-item__image-wrapper">
-                    <img class="skill-item__image-3" src="./images/Vector3.png" alt="">
+                    <img class="skill-item__image-3" src="./images/about_icon_3.png" alt="icon_3">
                 </div>
                 <h4 class="skill-item__title">Thoughtful Design</h4>
                 <p class="skill-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-            </li>
-        </ul>
+            </div>
+        </div>
+    </div>
     </section>
     <!-- ABOUT US END -->
     <!-- PRICING OPTIONS -->
     <section class="options">
         <div class="options__content">
             <h2 class="options__main-title">pricing options</h2>
-            <div class="separator"></div>
+            <div class="separator separator--orange"></div>
             <h5 class="options__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
             <div class="options__price-content">
                 <div class="price-content__price-list--wrapper">
