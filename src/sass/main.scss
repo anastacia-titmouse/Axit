@@ -24,116 +24,18 @@ html, body {
         border-bottom: 2px solid #EC7979;
     }
 }
-
 /*TABS SECTION*/
-
 @import "./tabs";
-
 /*TABS SECTION END*/
 
 /*AWESOME SECTION*/
-
 @import "./awesome_section";
-
 /*AWESOME SECTION END*/
 
 /*PRICE OPTIONS SECTION*/
-
-.options__content {
-    width: 1170px;
-    padding: 15px;
-    margin: 0 auto;
-    background-color: #F5F5F5;
-}
-.options__main-title {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    
-}
-.options__secondary-title {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    color: #86878B;
-}
-.options__price-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.price-content__price-list li:first-child {
-    background: #333333;
-    border: 1px solid #F5F5F5;
-    color: #FFFFFF;
-    font-family: 'Open Sans',sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-    text-transform: capitalize;
-    height: 60px;
-    padding-bottom: 25px;
-}
-
-.price-content__price-list li:nth-child(2) {
-    background-color: #333333;
-    border: 1px solid #F5F5F5;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    color: #FFFFFF;
-    height: 100px;
-    padding-top: 25px;
-}
-
-.price-content__price-list li:nth-child(3) {
-    background-color: #333333;
-    border: 1px solid #F5F5F5;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.5);
-    height: 50px;
-}
-.price-list__price-item {
-    background: #FFFFFF;
-    border: 1px solid #F5F5F5;
-    height: 50px;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;    
-    text-align: center;
-    text-transform: capitalize;
-    color: #86878B;
-    padding-top: 15px;
-
-}
-.price-content__price-list--optima {
-    margin-top: -5px;
-    box-shadow: 5px 5px 5px #c3c3c3;
-}
-.price-content__price-list {
-    padding: 0;
-}
-.price-content__price-list--wrapper {
-    flex: 1;
-}
-
+@import "./options.scss";
 /*PRICE OPTIONS SECTION END*/
 
 /*CUSTOMERS SECTION*/
 @import "./customers";
-
 /*CUSTOMERS SECTION END*/
