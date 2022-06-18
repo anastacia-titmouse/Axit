@@ -8,19 +8,17 @@
 
 html, body {
   margin: 0 auto;
-  background-color: #E5E5E5;
 }
 
 .container {
   width: 1170px;
   padding: 50px 15px;
   margin: 0 auto;
-  background-color: #FFFFFF;
 }
 
 .separator {
   width: 170px;
-  margin: 60px auto 40px auto;
+  margin: 50px auto 40px;
 }
 .separator--orange {
   border-bottom: 2px solid #EC7979;
@@ -183,11 +181,17 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.skill-item__image {
+  border-radius: 50%;
+  border: 1px solid white;
+}
 
 /*AWESOME SECTION END*/
 /*PRICE OPTIONS SECTION*/
-.options__content {
+.options {
   background-color: #F5F5F5;
+}
+.options__content {
   padding: 50px 15px;
 }
 .options__main-title {
@@ -269,9 +273,12 @@ html, body {
 }
 
 .price-content__prices:hover {
-  margin-top: -5px;
+  margin-top: -10px;
   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
           box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .price-content__price-list {
   padding: 0;
@@ -288,11 +295,6 @@ body {
   counter-reset: section;
 }
 
-.customers__container {
-  width: 1170px;
-  padding: 50px 15px;
-  margin: 0 auto;
-}
 .customers__main-title {
   font-family: "Raleway";
   font-style: normal;
