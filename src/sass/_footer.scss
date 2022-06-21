@@ -1,0 +1,23 @@
+.footer {
+    background-color: #000000;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .social-list__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    } 
+    &__text {
+        color: rgba(255, 255, 255, 0.5);
+        font-family: $fontRaleway;
+        font-weight: 400;
+        font-size: 18px;
+    }  
+}

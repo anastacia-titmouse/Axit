@@ -1,19 +1,18 @@
 .about_us {
     &__main-title {
         font-family: 'Raleway', sans-serif;
-        font-style: normal;
         font-weight: 400;
         font-size: 36px;
         text-align: center;
-        margin: 0;
+        margin-bottom: 60px;
     }
     &__secondary_title {
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 400;
         font-size: 18px;
         text-align: center;
         color: #86878B;
+        margin-bottom: 110px;
     }
     &__skills-list--wrapper {
         display: flex;

@@ -19,6 +19,19 @@ ul, ol {
     padding: 0;
     margin: 0;
 }
+a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container {
     width: 1170px;
     padding: 50px 15px;
@@ -26,8 +39,53 @@ ul, ol {
 }
 .separator {
     width: 170px;
-    margin: 50px auto 40px;
+    margin: 0 auto;
     &--orange{
         border-bottom: 2px solid #EC7979;
+        margin-bottom: 40px;
+    }
+    &--white {
+        border-bottom: 2px solid #fff;
+    }
+}
+.button {
+    display: block;
+    width: 270px;
+    height: 60px;
+    color:#fff;
+    font-family: $fontOpenSans;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color .3s ease-in-out;
+    &--transparent {
+        background-color:transparent;
+        border: 2px solid #FFFFFF;
+        
+        &:hover, &:focus{
+            cursor: pointer;
+            border: 2px solid #EC7979;
+            color: #EC7979;
+        }
+        &:active {
+            background: #AB4949;
+            border: 2px solid #AB4949;
+            color:#fff;  
+        }
+    }
+    &--red {
+        background-color: #EC7979;
+        border: none;
+        border-color: transparent;
+        margin-bottom: 30px;
+
+        &:hover, &:focus{
+            cursor: pointer;
+            background-color: #AB4949;;
+        }
+        &:active {
+            background: #EC7979;
+            box-shadow: inset 0px 0px 10px #AB4949;
+        }
     }
 }

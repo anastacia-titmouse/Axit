@@ -1,0 +1,35 @@
+.header {
+    background-color: #000000;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 15px;
+    }
+}
+.nav {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        padding: 35px;
+        &:hover, &:focus {
+            cursor: pointer;
+            background-color: #EC7979;
+            transition: background-color .3s ease-in-out;
+        }
+        &:active {
+            background-color: #AB4949;
+            transition: background-color .3s ease-in-out;
+        }
+    }
+
+&__link {
+    color: #FFFFFF;
+    font-family: $fontOpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+text-transform: capitalize;
+}
+}

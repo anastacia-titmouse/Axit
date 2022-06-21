@@ -1,5 +1,9 @@
-
+@import "./vars";
 @import "./adjustment";
+
+@import "./header";
+@import "./banner";
+@import "./social_media";
 
 /*TABS SECTION*/
 @import "./tabs";
@@ -16,3 +20,6 @@
 /*CUSTOMERS SECTION*/
 @import "./customers";
 /*CUSTOMERS SECTION END*/
+@import "./design";
+@import "./contacts";
+@import "./footer";

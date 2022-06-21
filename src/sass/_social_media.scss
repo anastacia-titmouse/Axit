@@ -1,0 +1,35 @@
+.social {
+    background-color: #F8EFEF;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px;
+
+    }
+    &__title-wrapper {
+        width: 40%;
+    }
+    &__main-title {
+        font-family:$fontOpenSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+    &__secondary-title {
+                font-family:$fontRaleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #86878B;
+    }
+    .social-list__banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+    }
+}

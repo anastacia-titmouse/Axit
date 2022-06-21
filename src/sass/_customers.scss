@@ -1,24 +1,22 @@
-body {
-    counter-reset: section;
-}
+
 .customers {
     &__main-title {
-        font-family: 'Raleway';
-        font-style: normal;
+        font-family: $fontRaleway;
         font-weight: 400;
         font-size: 24px;
         text-align: center;
         text-transform: uppercase;
         color: #000000;
+        margin-bottom: 60px;
     }
     &__secondary-title {
-        font-family: 'Raleway';
-        font-style: normal;
+        font-family: $fontRaleway;
         font-weight: 400;
         font-size: 14px;
         text-align: center;
         color: #86878B;
         padding: 5px 0;
+        margin-bottom: 85px;
     }
     &__feedback-container {
         display:flex;
@@ -31,6 +29,7 @@ body {
         border-radius: 10px;
         padding: 50px;
         position: relative;
+        margin-bottom: 60px;
         &::after{
             content: "";
             display: block;
@@ -46,7 +45,7 @@ body {
     }
     &__feedback-text {
         margin: 0;
-        font-family: 'Raleway',sans-serif;
+        font-family: $fontRaleway;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -55,42 +54,25 @@ body {
         color: #86878B;
     }
     &__image-content {
-        padding-top: 40px;
         display: flex;
+        gap: 30px;
     }
     &__image-info {
         flex-direction: column;
-        &:after{
-            counter-increment: section;
-            content: counter(section);
-            width: 30px;
-            height: 30px;
-            border-radius: 100%;
-            background-color: #eeeeee;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            margin: 0 auto;
-            
-        }
     }
-    &__customer-name {
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
+    &__user-name {
+        font-family: $fontOpenSans;
         font-weight: 700;
         font-size: 18px;
         text-transform: capitalize;
         color: #000000;
-        margin: 10px 20px;
+        margin-bottom: 30px;
     }
-    &__customer-occupation {
-        font-family: 'Raleway',sans-serif;
-        font-style: normal;
+    &__user-group {
+        font-family: $fontRaleway;
         font-weight: 400;
         font-size: 14px;
         color: #000000;
-        margin: 0 20px 20px 20px;
     }
 }
 

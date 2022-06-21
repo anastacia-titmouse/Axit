@@ -1,23 +1,23 @@
 .options {
     background-color: #F5F5F5;
-    &__content {
-        padding: 50px 15px;
+    .container {
+        padding-top: 100px;
     }
     &__main-title {
-        font-family: 'Raleway', sans-serif;
-        font-style: normal;
+        font-family: $fontRaleway;
         font-weight: 400;
         font-size: 36px;
         text-align: center;
         text-transform: uppercase;
+        margin-bottom: 60px;
     }
     &__secondary-title {
-        font-family: 'Raleway';
-        font-style: normal;
+        font-family: $fontRaleway;
         font-weight: 400;
         font-size: 18px;
         text-align: center;
         color: #86878B;
+        margin-bottom: 60px;
     }
     &__price-content {
         display: flex;
@@ -30,7 +30,7 @@
         background: #333333;
         border: 1px solid #F5F5F5;
         color: #FFFFFF;
-        font-family: 'Open Sans',sans-serif;
+        font-family: $fontOpenSans;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -42,7 +42,7 @@
     &__prices p:nth-child(2) {
         background-color: #333333;
         border: 1px solid #F5F5F5;
-        font-family: 'Raleway', sans-serif;
+        font-family: $fontRaleway;
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -54,7 +54,7 @@
     &__prices p:nth-child(3) {
         background-color: #333333;
         border: 1px solid #F5F5F5;
-        font-family: 'Raleway', sans-serif;
+        font-family: $fontRaleway;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -68,7 +68,7 @@
         background: #FFFFFF;
         border: 1px solid #F5F5F5;
         height: 50px;
-        font-family: 'Raleway', sans-serif;
+        font-family: $fontRaleway;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;    
