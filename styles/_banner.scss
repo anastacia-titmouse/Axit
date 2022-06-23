@@ -1,10 +1,9 @@
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5)),  url(../images/banner_image.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5)),  url(../assets/images/banner/banner_image.jpg);
     background-position: center;
     background-size: cover;
     
     .separator {
-        margin: 0;
         margin-bottom: 40px;
     }
     
@@ -86,6 +85,19 @@
         border: none;
         border-bottom: 1px solid #BDBDBD;
         text-align: left;
+        outline: none;
+        font-family: $fontOpenSans;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #BDBDBD;
+        &::placeholder {
+            font-family: $fontOpenSans;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #BDBDBD;
+        }
     }
 }
 

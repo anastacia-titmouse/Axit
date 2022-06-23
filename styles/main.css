@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .separator {
   width: 170px;
-  margin: 0 auto;
+  margin: 60px auto 40px auto;
 }
 .separator--orange {
   border-bottom: 2px solid #EC7979;
@@ -99,6 +99,17 @@ h1, h2, h3, h4, h5, h6, p {
           box-shadow: inset 0px 0px 10px #AB4949;
 }
 
+.social__media-icon {
+  width: 70;
+  height: 70;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.social__media-icon:hover path, .social__media-icon:focus path {
+  fill: #EC7979;
+  cursor: pointer;
+}
+
 .header {
   background-color: #000000;
 }
@@ -144,13 +155,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .banner {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../images/banner_image.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/banner_image.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../assets/images/banner/banner_image.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/images/banner/banner_image.jpg);
   background-position: center;
   background-size: cover;
 }
 .banner .separator {
-  margin: 0;
   margin-bottom: 40px;
 }
 .banner .container {
@@ -251,6 +261,47 @@ h1, h2, h3, h4, h5, h6, p {
   border: none;
   border-bottom: 1px solid #BDBDBD;
   text-align: left;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.banner-form__placeholder::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.banner-form__placeholder::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.banner-form__placeholder:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.banner-form__placeholder::-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.banner-form__placeholder::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
 }
 
 .social {
@@ -363,8 +414,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .tabs-item__item {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  font-family: normal;
+  font-style: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -458,7 +509,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 60px;
 }
 .options__secondary-title {
   font-family: "Raleway", sans-serif;
@@ -556,7 +606,6 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 60px;
 }
 .customers__secondary-title {
   font-family: "Raleway", sans-serif;
@@ -596,7 +645,6 @@ h1, h2, h3, h4, h5, h6, p {
 .feedback-content__feedback-text {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -632,25 +680,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*CUSTOMERS SECTION END*/
 .design {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../images/design/image.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/design/image.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../assets/images/design/image.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/images/design/image.png);
   background-position: center;
   background-size: cover;
 }
 .design .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 100px;
 }
 .design__main-title {
@@ -658,10 +693,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Raleway", sans-serif;
   font-size: 36px;
   font-weight: 400;
-  margin-bottom: 60px;
-}
-.design__separator {
-  margin-bottom: 40px;
+  text-align: center;
 }
 .design__secondary-title {
   color: #fff;
@@ -669,41 +701,15 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 70px;
+  text-align: center;
 }
 .design__button {
   width: 370px;
+  margin: 0 auto;
 }
 
 .contacts .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding-top: 100px;
-}
-.contacts__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .contacts__main-title {
   font-family: "Raleway", sans-serif;
@@ -712,7 +718,6 @@ h1, h2, h3, h4, h5, h6, p {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  margin-bottom: 60px;
 }
 .contacts__secondary-title {
   font-family: "Raleway", sans-serif;
@@ -744,28 +749,67 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 85px;
 }
-.contacts__form--right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 191px;
+.contacts__form--left, .contacts__form--right {
+  width: 50%;
 }
 .contacts__placeholder {
+  padding: 16px 0;
+  margin-bottom: 35px;
   border: none;
   border-bottom: 1px solid #BDBDBD;
-  width: 570px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+  outline: none;
 }
-.contacts__placeholder--borderless {
-  border: none;
+.contacts__placeholder:last-child {
+  margin-bottom: 0;
+}
+.contacts__placeholder--message-field {
+  height: 100%;
+  width: 100%;
+}
+.contacts__placeholder::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.contacts__placeholder::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.contacts__placeholder:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.contacts__placeholder::-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.contacts__placeholder::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
 }
 .contacts__button {
   width: 370px;
+  margin: 0 auto;
 }
 
 .footer {

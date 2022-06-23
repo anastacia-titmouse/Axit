@@ -1,8 +1,0 @@
-@mixin fontStyle ($fontStyle, $fontOpenSans){
-    font-family: $fontOpenSans;
-    font-style: $fontStyle;
-}
-@mixin fontStyle ($fontStyle, $fontRaleway){
-    font-family: $fontRaleway;
-    font-style: $fontStyle;
-}

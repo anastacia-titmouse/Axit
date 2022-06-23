@@ -1,0 +1,10 @@
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fontStyle($fontStyle, $fontFamily){
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+}

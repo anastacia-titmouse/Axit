@@ -1,16 +1,6 @@
 .contacts {
     .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         padding-top: 100px;
-    }
-    &__content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
     &__main-title {
         font-family: $fontRaleway;
@@ -19,7 +9,6 @@
         text-transform: uppercase;
         color: #000000;
         text-align: center;
-        margin-bottom: 60px;
     }
     &__secondary-title {
         font-family: $fontRaleway;
@@ -42,23 +31,43 @@
         &--left {
             display: flex;
             flex-direction: column;
-            gap: 85px;
+
         }
-        &--right {
-            display: flex;
-            flex-direction: column;
-            gap: 191px;
+        &--left, &--right {
+            width: 50%;
         }
     }
     &__placeholder {
+        padding: 16px 0;
+        margin-bottom: 35px;
         border: none;
         border-bottom: 1px solid #BDBDBD;
-        width: 570px;
-        &--borderless {
-            border: none;
+        font-family: $fontOpenSans;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #BDBDBD;
+        outline: none;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--message-field {
+            height: 100%;
+            width: 100%;
+        }
+        
+        &::placeholder {
+            font-family: $fontOpenSans;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #BDBDBD;
         }
     }
     &__button {
         width: 370px;
+        margin: 0 auto;
     }
 }

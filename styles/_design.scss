@@ -1,13 +1,10 @@
 .design {
-    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/design/image.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/images/design/image.png);
     background-position: center;
     background-size: cover;
 
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
         padding-top: 100px;
     }
     &__main-title{
@@ -15,10 +12,7 @@
         font-family: $fontRaleway;
         font-size: 36px;
         font-weight: 400;
-        margin-bottom: 60px;
-    }
-    &__separator{
-        margin-bottom: 40px;
+        text-align: center;
     }
     &__secondary-title{
         color:#fff;
@@ -26,9 +20,11 @@
         font-size: 18px;
         font-weight: 400;
         margin-bottom: 70px;
+        text-align: center;
     }
     &__button {
         width: 370px;
+        margin: 0 auto;
     }
 
 }
