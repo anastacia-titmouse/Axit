@@ -39,13 +39,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .separator {
     width: 170px;
-    margin: 60px auto 40px auto;
     &--orange{
         border-bottom: 2px solid #EC7979;
-        margin-bottom: 40px;
+        margin: 60px auto 40px auto;
     }
     &--white {
         border-bottom: 2px solid #fff;
+        margin-bottom: 40px;
+        margin-top: 60px;
     }
 }
 .button {

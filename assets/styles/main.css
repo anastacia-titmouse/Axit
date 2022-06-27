@@ -47,14 +47,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 .separator {
   width: 170px;
-  margin: 60px auto 40px auto;
 }
 .separator--orange {
   border-bottom: 2px solid #EC7979;
-  margin-bottom: 40px;
+  margin: 60px auto 40px auto;
 }
 .separator--white {
   border-bottom: 2px solid #fff;
+  margin-bottom: 40px;
+  margin-top: 60px;
 }
 
 .button {
@@ -155,13 +156,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .banner {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../assets/images/banner/banner_image.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/images/banner/banner_image.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/banner/banner_image.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner/banner_image.jpg);
   background-position: center;
   background-size: cover;
-}
-.banner .separator {
-  margin-bottom: 40px;
+  height: 100vh;
 }
 .banner .container {
   display: -webkit-box;
@@ -173,7 +172,7 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 40px;
   padding-top: 200px;
 }
 .banner__info {
@@ -212,7 +211,6 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 56px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 60px;
 }
 .banner__secondary-title {
   font-family: "Raleway", sans-serif;
@@ -220,7 +218,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-  margin: 0;
   margin-bottom: 40px;
 }
 .banner__button {
@@ -680,10 +677,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*CUSTOMERS SECTION END*/
 .design {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../assets/images/design/image.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/images/design/image.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/design/image.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/design/image.png);
   background-position: center;
   background-size: cover;
+}
+.design__separator {
+  margin: 60px auto 40px auto;
 }
 .design .container {
   padding-top: 100px;
