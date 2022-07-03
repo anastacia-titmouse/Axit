@@ -1,26 +1,42 @@
 .tabs {
+    .container {
+        padding-top: 70px;
+    }
     &__tabs-container {
         display: flex;
         justify-content: flex-start;
         width: 50%;
+
+        @include mediaMobile {
+            width: 100%;
+        }
     }
     &__tabs-content {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
         width: 60%;
-        padding-left: 80px;
+        padding: 50px;
+
+        @include mediaMobile {
+            padding: 30px;
+            width: 100%;
+        }
+        
     }
     &__content-wrapper {
         border: 1px solid #E5E5E5;
         display: flex;
-        gap: 30px;
         justify-content: center;
         align-items: center;
-        height: 500px;
+
+        @include mediaTablet {
+                padding: 20px;
+        }
+        @include mediaMobile {
+            padding: 20px;
+            display: block;
+    }
     }
     &__tabs-item {
-        min-width: 150px;
+        width: 150px;
         text-align: center;
         position: relative;
         padding: 10px;
@@ -40,15 +56,14 @@
             }
         }
     }
-    &__image-wrapper{
-        width: 40%;
-        height: 100%;
-    }
     &__image {
         width: 100%;
         height: 100%;
-    }
 
+        @include mediaMobile {
+            display: none
+        }
+    }
 }
 .tabs-item {
     &__item {
@@ -66,6 +81,13 @@
         font-size: 30px;
         color: #000000;
         margin-bottom: 50px;
+
+        @include mediaTablet {
+                font-size: 24px;
+        }
+        @include mediaMobile {
+            font-size: 18px;
+        }
     }
     &__text-wrapper {
         margin-bottom: 30px;
@@ -73,7 +95,22 @@
     &__tabs-text {
         font-family: $fontRaleway;
         font-weight: 400;
-        font-size: 18px;  
+        font-size: 18px; 
+        
+        @include mediaTablet {
+                font-size: 14px;
+        }
+        @include mediaMobile {
+            font-size: 13px;
+        }
+    }
+    &__button {
+        @include mediaTablet {
+            width: 230px;
+        }
+        @include mediaMobile {
+            width: 100%;
+        }
     }
 }
 

@@ -2,18 +2,23 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),  url(../images/banner/banner_image.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
 
+    
     .container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 40px;
-        padding-top: 200px;
-    }
-    &__info {
-        display: flex;
-        flex-direction: column;
+        padding: 200px 40px 105px 10px;
+        gap: 30px;
+
+        @include mediaTablet {
+            & {
+                padding: 150px 20px 106px 115px;
+            }
+        }
+        @include mediaMobile {
+            padding: 140px 123px 50px;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__logo-wrapper {
         margin-bottom: 75px;
@@ -26,10 +31,6 @@
         width: 65px;
         height: 55px;
     }
-    &__banner-form {
-        display: flex;
-        flex-direction: column;
-    }
     &__main-title {
         font-family: $fontRaleway;
         font-weight: 500;
@@ -37,6 +38,13 @@
         line-height: 56px;
         text-transform: uppercase;
         color: #FFFFFF;
+
+        @include mediaTablet {
+            & {
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
     }
     &__secondary-title {
         font-family: $fontRaleway;
@@ -45,9 +53,30 @@
         line-height: 21px;
         color: #FFFFFF;
         margin-bottom: 40px;
+
+        @include mediaTablet {
+            & {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
     }
     &__button {
         margin-bottom: 185px;
+
+        @include mediaMobile {
+            margin-bottom: 55px;
+        }
+    }
+    &__separator {
+        @include mediaTablet {
+                width: 115px;
+                    }
+        @include mediaMobile {
+            width: 134px;
+            margin: 60px auto 40px auto;
+        }
+        
     }
 }
 .banner-form {
@@ -58,23 +87,34 @@
         text-transform: uppercase;
         color: #333333;
         background-color: #fff;
-        border-radius: 10px 10px 0 0;
         text-align: center;
         padding-top: 50px;
         &--orange {
             color:#EC7979;
         }
+
+        @include mediaTablet {
+            & {
+                font-size: 18px;
+            }
+        }
     }
-    &__get-started {
-        border-radius: 0px 0px 10px 10px;
-        width: 470px;
-    }
-    &__placeholder-wrapper {
+
+    &__info {
         display: flex;
         flex-direction: column;
         gap: 70px;
         background-color:#FFFFFF;
         padding: 50px 50px 75px 50px;
+        border-radius: 10px 10px 0 0;
+        width: 470px;
+
+        @include mediaTablet {
+            width: 380px;
+        } 
+        @include mediaMobile {
+            width: 288px;
+        } 
     }
     &__placeholder {
         border: none;
@@ -93,6 +133,17 @@
             line-height: 19px;
             color: #BDBDBD;
         }
+    }
+    &__get-started {
+        border-radius: 0px 0px 10px 10px;
+        width: 470px;
+        @include mediaTablet {
+            width: 380px;
+        } 
+        @include mediaMobile {
+            width: 288px;
+        } 
+
     }
 }
 

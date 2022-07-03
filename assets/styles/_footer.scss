@@ -6,18 +6,35 @@
         align-items: center;
         flex-direction: column;
         gap: 20px;
-        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+
+        @include mediaMobile {
+            gap: 45px;
+            padding: 40px 20px 45px 20px;
+        }
     }
     .social-list__footer {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 30px;
+
+        @include mediaMobile {
+            gap: 20px;
+        }
     } 
     &__text {
         color: rgba(255, 255, 255, 0.5);
         font-family: $fontRaleway;
         font-weight: 400;
         font-size: 18px;
+
+        @include mediaTablet {
+            font-size: 14px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+        }
     }  
 }

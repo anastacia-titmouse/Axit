@@ -1,5 +1,9 @@
 
 .customers {
+    .container {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
     &__main-title {
         font-family: $fontRaleway;
         font-weight: 400;
@@ -7,6 +11,13 @@
         text-align: center;
         text-transform: uppercase;
         color: #000000;
+
+        @include mediaTablet {
+            font-size: 24px;
+        }
+        @include mediaMobile {
+            font-size: 24px;
+        }
     }
     &__secondary-title {
         font-family: $fontRaleway;
@@ -16,10 +27,43 @@
         color: #86878B;
         padding: 5px 0;
         margin-bottom: 85px;
+
+        @include mediaTablet {
+            font-size: 14px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+        }
     }
     &__feedback-container {
         display:flex;
         gap: 20px;
+    }
+    &__feedback-content {
+        @include mediaTablet {
+            font-size: 14px;
+        }
+        @include mediaMobile {
+            display: none;
+        }
+    }
+    &__slider {
+        display: none;
+
+        @include mediaMobile {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+    &__slider-item {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #86878B;
+        &--active {
+            background-color: #86878B;
+        }
     }
 }
 .feedback-content {
@@ -50,10 +94,30 @@
         line-height: 16px;
         text-align: center;
         color: #86878B;
+
+        @include mediaTablet {
+            font-size: 14px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+        }
     }
     &__image-content {
         display: flex;
         gap: 30px;
+    }
+    &__image {
+        width: 70px;
+        height: 70px;
+
+        @include mediaTablet {
+            width: 65px;
+        height: 65px;
+        }
+        @include mediaMobile {
+            width: 55px;
+            height: 55px;
+        }
     }
     &__image-info {
         flex-direction: column;
@@ -71,6 +135,13 @@
         font-weight: 400;
         font-size: 14px;
         color: #000000;
+
+        @include mediaTablet {
+            font-size: 14px;
+        }
+        @include mediaMobile {
+            margin-bottom: 30px;
+        }
     }
 }
 

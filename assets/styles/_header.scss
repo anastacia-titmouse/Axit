@@ -6,8 +6,35 @@
         align-items: center;
         padding: 0px 15px;
     }
+    &__burger {
+        background-color: transparent;
+        border: none;
+        display: none;
+        width: 24px;
+        height: 18px;
+        outline: none;
+        border: none;
+        margin: 20px;
+
+        @include mediaMobile {
+            display: block;
+
+            &:active{
+                .header__burger-icon{
+                    path{
+                        fill: rgb(214, 202, 202);
+                    }
+                }
+            }
+        }
+    }
 }
 .nav {
+
+    @include mediaMobile {
+        display: none;
+    }
+    
     &__list {
         display: flex;
     }
@@ -24,12 +51,12 @@
         }
     }
 
-&__link {
-    color: #FFFFFF;
-    font-family: $fontOpenSans;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-text-transform: capitalize;
-}
+    &__link {
+        color: #FFFFFF;
+        font-family: $fontOpenSans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    }
 }
