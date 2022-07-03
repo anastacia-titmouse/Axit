@@ -6,10 +6,9 @@
     &__separator {
         margin: 60px auto 40px auto;
     }
-
     .container {
-
         padding-top: 100px;
+        padding-bottom: 50px;
     }
     &__main-title{
         color:#fff;
@@ -17,6 +16,14 @@
         font-size: 36px;
         font-weight: 400;
         text-align: center;
+
+        
+        @include mediaTablet {
+            font-size: 24px;
+        }
+        @include mediaMobile {
+            font-size: 24px;
+        }
     }
     &__secondary-title{
         color:#fff;
@@ -25,10 +32,26 @@
         font-weight: 400;
         margin-bottom: 70px;
         text-align: center;
+
+        
+        @include mediaTablet {
+            font-size: 14px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+        }
     }
     &__button {
         width: 370px;
         margin: 0 auto;
+
+        
+        @include mediaTablet {
+            width: 318px;
+        }
+        @include mediaMobile {
+            width: 290px;
+        }
     }
 
 }

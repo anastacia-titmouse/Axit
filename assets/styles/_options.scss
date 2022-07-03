@@ -2,6 +2,11 @@
     background-color: #F5F5F5;
     .container {
         padding-top: 100px;
+        padding-bottom: 50px;
+
+        @include mediaMobile {
+        padding-top: 60px;
+        }
     }
     &__main-title {
         font-family: $fontRaleway;
@@ -9,6 +14,13 @@
         font-size: 36px;
         text-align: center;
         text-transform: uppercase;
+
+        @include mediaTablet {
+                font-size: 24px;
+        }
+        @include mediaMobile {
+            font-size: 24px;
+        }
     }
     &__secondary-title {
         font-family: $fontRaleway;
@@ -17,11 +29,27 @@
         text-align: center;
         color: #86878B;
         margin-bottom: 60px;
+
+        @include mediaTablet {
+            font-size: 14px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+        }
+
     }
     &__price-content {
         display: flex;
         justify-content: space-between;
         gap: 30px;
+
+        @include mediaTablet {
+            font-size: 14px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+            flex-wrap: wrap;
+        }
     }
 }
 .price-content {
@@ -37,6 +65,19 @@
         text-transform: capitalize;
         height: 60px;
         padding-bottom: 25px;
+
+        @include mediaTablet {
+            font-size: 14px;
+            width: 315px;
+            height: 50px;
+        }
+        @include mediaMobile {
+            font-size: 18px;
+            width: 290px;
+            height: 40px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
     }
     &__prices p:nth-child(2) {
         background-color: #333333;
@@ -49,6 +90,16 @@
         color: #FFFFFF;
         height: 100px;
         padding-top: 25px;
+
+        @include mediaTablet {
+            width: 315px;
+            height: 90px;
+        }
+        @include mediaMobile {
+            font-size: 24px;
+            width: 290px;
+            height: 80px;
+        }
     }
     &__prices p:nth-child(3) {
         background-color: #333333;
@@ -60,6 +111,18 @@
         text-align: center;
         color: rgba(255, 255, 255, 0.5);
         height: 50px;
+
+        @include mediaTablet {
+            font-size: 14px;
+            width: 315px;
+            height: 45px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+            width: 290px;
+            height: 40px;
+            padding-top: 10px;
+        }
     }
 }
 .price-list {
@@ -76,6 +139,16 @@
         color: #86878B;
         padding-top: 15px;
         margin: 0;
+
+        @include mediaTablet {
+            width: 315px;
+            height: 45px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+            width: 290px;
+            height: 40px;
+        }
     }
 }
 .price-content {
